@@ -1,0 +1,8 @@
+-classpath '/home/infot/Desktop/M03-Prog/M03---Prog/UF4/Fitxers/5.0/Fitxers/build/classes/java/main:/home/infot/Desktop/M03-Prog/M03---Prog/UF4/Fitxers/5.0/Fitxers/build/resources/main'
+-d '/home/infot/Desktop/M03-Prog/M03---Prog/UF4/Fitxers/5.0/Fitxers/build/docs/javadoc'
+-doctitle 'Fitxers 5.0 API'
+-notimestamp 
+-quiet 
+-windowtitle 'Fitxers 5.0 API'
+'/home/infot/Desktop/M03-Prog/M03---Prog/UF4/Fitxers/5.0/Fitxers/src/main/java/pkgFitxers/Fitxers.java'
+'/home/infot/Desktop/M03-Prog/M03---Prog/UF4/Fitxers/5.0/Fitxers/src/main/java/pkgFitxers/MeuObjecteOutputStream.java'

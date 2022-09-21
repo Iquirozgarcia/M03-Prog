@@ -1,0 +1,76 @@
+plugins {
+    id 'java'
+}
+
+group 'ivan.quiroz'
+version '5.0'
+
+
+///////////////////////////////////////////////
+// //**per pujar javadoc i sources//
+// IMPORTANT: cal posar també el que hi ha a publishing > publications!!!
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    //classifier = 'javadoc'
+    archiveClassifier = 'javadoc'
+    from javadoc
+}
+// //** !!per pujar javadoc i sources//
+///////////////////////////////////////////////
+
+
+
+
+////////////////////////////
+// PER BAIXAR LLIBRERIES //
+repositories {
+    mavenCentral()
+    maven {             // publicarà en un repositori remot
+        url myMavenRepoReadUrl
+        credentials {
+            username myMavenRepoReadUsername   // l'usuari i el pass estan a
+            password myMavenRepoReadPassword   //  l'arxiu ~/.gradle/gradle.properties
+        }
+    }
+}
+
+
+
+////////////////////////////
+// PER PUJAR LA LLIBRERIA //
+
+apply plugin: 'maven-publish'
+
+publishing {
+    repositories {
+        maven {
+            url myMavenRepoWriteUrl
+            credentials {
+                username myMavenRepoWriteUsername
+                password myMavenRepoWritePassword
+            }
+        }
+    }
+
+    publications {
+        maven(MavenPublication) {
+            from components.java
+            artifact javadocJar         // per pujar javadoc
+//            artifact sourcesJar       // per pujar sources
+
+        }
+    }
+}
+//**************************
+
+
+
+
+dependencies {
+
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}

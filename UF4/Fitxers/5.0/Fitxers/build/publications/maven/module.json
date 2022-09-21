@@ -1,0 +1,60 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "ivan.quiroz",
+    "module": "Fitxers",
+    "version": "5.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "Fitxers-5.0.jar",
+          "url": "Fitxers-5.0.jar",
+          "size": 7455,
+          "sha512": "627bb5a1f75e4a16d09d010e770a3d772dbfa9d4e9b5a10870f7c711c5b58b8d8572333d38b93a814816769d18f11418badb49a3973c92ca7ff0b91c1ccbacae",
+          "sha256": "abfcb38a78713a11cf866719afd65658e011dcbc4753e54982e9a7a2a14610f0",
+          "sha1": "81ed785441b0e19486b20a073a6ec39a76cd1fea",
+          "md5": "8dad61069c07d9d461766c9970b78bf3"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 11,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "Fitxers-5.0.jar",
+          "url": "Fitxers-5.0.jar",
+          "size": 7455,
+          "sha512": "627bb5a1f75e4a16d09d010e770a3d772dbfa9d4e9b5a10870f7c711c5b58b8d8572333d38b93a814816769d18f11418badb49a3973c92ca7ff0b91c1ccbacae",
+          "sha256": "abfcb38a78713a11cf866719afd65658e011dcbc4753e54982e9a7a2a14610f0",
+          "sha1": "81ed785441b0e19486b20a073a6ec39a76cd1fea",
+          "md5": "8dad61069c07d9d461766c9970b78bf3"
+        }
+      ]
+    }
+  ]
+}

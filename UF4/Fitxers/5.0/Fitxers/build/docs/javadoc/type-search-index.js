@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"pkgFitxers","l":"Fitxers"},{"p":"pkgFitxers","l":"MeuObjecteOutputStream"}]
